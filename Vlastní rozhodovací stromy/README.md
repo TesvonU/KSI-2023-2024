@@ -1,3 +1,5 @@
+Zadání:
+
 Má Karlík nakúpiť: Ovocie?
 Napíšte funkciu, čo vráti Rozhodovací strom, ktorý pre údaje - float: cena, bool: ma_to_doma, int: karlikove_peniaze - rozhodne, či si má Karlík kúpiť Ovocie. Int na Karlíkové peniaze môže mať hodnoty len 0 - málo, 1 - stredne veľa, 2 - veľa.
 Triedu na rozhodovacie stromy máte pripravenú a testovacie údaje máte pripravené v premennej “data”. Overovať sa bude na rozšírenej množine, ale nemusíte sa báť nejednoznačných prípadov, alebo chytákov.
