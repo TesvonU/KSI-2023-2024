@@ -47,6 +47,7 @@ def backtrack(returned, board_size, result, new_pos1, new_pos2, movable, unmovab
                     new_pos2 = [pos[0] + move_x[i], pos[1] + move_y[i]]
                     if is_valid2(board_size, new_pos2):
                         if is_valid(new_pos1, new_pos2, movable):
+                            print(result)
                             if backtrack(returned, board_size, result + [(f"{chr(pos[1] + 97)}{board_size - pos[0]}qK{chr(new_pos1[1] + 97)}{board_size - new_pos1[0]}&{chr(new_pos2[1] + 97)}{board_size - new_pos2[0]}")], new_pos1, new_pos2, movable + [new_pos1, new_pos2], unmovable + [pos], movable): #inspirace z https://stackoverflow.com/questions/18544419/how-to-convert-numbers-to-alphabet
                                 return True
     return False
@@ -64,11 +65,13 @@ def is_valid(new_pos1, new_pos2, previously_movable):
 def is_valid2(board_size, new_pos):
     if new_pos:
         if new_pos[0] < 0 or new_pos[1] < 0:
+            #print("nula false")
             return False
         if new_pos[0] >= board_size or new_pos[1] >= board_size:
+            #print("strop false")
             return False
+    #print("accept")
     return True
 
-
 #Test
-play(5, qKc4)
+play(5, "qKc4")
