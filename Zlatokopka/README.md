@@ -77,3 +77,5 @@ Třída, která představuje samotný model, který máte za úkol natrénovat. 
   - `name: str`, **required**: Název modelu, který se má načíst. Funguje stejně, jako parametr `name` u metody `save`.
   - `path: Optinonal[str]`, default `None`:  Cesta ke složce, ve které je uložený model, který se má načíst. Funguje stejně, jako parametr `path` u metody `save`.
   - `device: Optional[torch.device]`, default `None`: Zařízení, na kterém mají běžet výpočty. Funguje stejně, jako parametr `device` u konstuktoru třídy.
+  
+SRC: https://ksi.fi.muni.cz/ulohy/648
